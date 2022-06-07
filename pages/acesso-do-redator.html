@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no" >
+ 
+  <title>meuApp</title>
+
+<link href="../styles/estilo-acesso.css" rel="stylesheet"/>
+</head>
+<body id="flexContainer">
+
+
+ <div id="titulo">
+  <div class="daiku">
+     <h1>SHINIGAME</h1>
+     <h1>----DAIKU----</h1>
+   </div>
+	
+ </div>
+ <div class="flex-acesso">
+	 <form class="form-de-acesso">
+		 <label>Acesso Restrito</label>
+		  <div>
+			 <label>Usuario</label>
+			 <input type="text" id="users" placeholder="Digite seu usuario" />
+		  </div>
+		  <div>
+			 <label>Senha</label>
+			 <input type="password" id="password" placeholder="Digite sua senha" />
+		  </div>
+		  <div>
+			 <button type="button" id="button" onClick="consulta()">ACESSAR</button>
+		  </div>
+	 </form>
+ </div>
+	<div id="rodape" align="center">
+	<img src="../img/bae so.PNG"  width="200" height="100" />
+	</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<script src="../scripts/login.js"></script>
+ 
+
+</body>
+</html> 
+
+

@@ -1,0 +1,128 @@
+ * {margin: 0; padding: 0}
+  
+    body {
+	background-color: #363636;
+	}
+	#flexContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 100%;
+	border: 1px solid lime;
+
+	}
+	#titulo {
+	 display: flex;
+     justify-content: center;
+     align-items: center;
+	 //border: 1px solid red;
+	 width: 100%;
+	 height: 80px;
+	 background-color: black;
+	 color: #fff;
+	
+	}
+
+	.daiku {
+	//border: 1px solid red;
+	font-size: 11px;
+	margin-top: 0px;
+	margin-left: 40px;
+	background-image: linear-gradient(to right, #000000, #0a1853);
+	width: 180px;
+	}
+	
+	.flex-acesso {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 height: 750px;
+	 margin: 50px;
+	 border: 1px solid violet;
+	}
+	
+	.flex-acesso form {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 padding: 10px;
+	 margin: 20px;
+	 border: 1px solid #000;	
+	 background-image: linear-gradient(to right, #000000, #0a1853);
+	 width: 500px;
+	 height: 600px;
+	 color: #fff;
+	}
+	
+	.flex-acesso form label {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 margin: 5px;
+	 font-size: 20px; 
+	}
+	
+	.flex-acesso form #in1 {
+	 height: 40px;
+	 width: 400px;
+	}
+	
+	.flex-acesso form #in2 {
+	 height: 200px;
+	 width: 400px;
+	}
+	
+	.flex-acesso form #in3 {
+	 height: 300px;
+	 width: 400px;
+	}
+	
+	.flex-acesso form #in4 {
+	 height: 200px;
+	 width: 400px;
+	}
+	
+	.flex-acesso form #in5 {
+	 height: 40px;
+	 width: 60px;
+	}
+	
+	.flex-acesso form #in6 {
+	 height: 40px;
+	 width: 200px;
+	}
+	
+	.flex-acesso button {
+	 margin: 15px;
+	 height: 30px;
+	 width: 80px;
+	 background-color: #800000;
+	}
+	
+	.flex-acesso button:hover {
+	 margin: 15px;
+	 height: 30px;
+	 width: 80px;
+	 background-color: #FF0000;
+	}
+	
+	#rodape {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 120px;
+	background-color: #000;
+	margin-top: 80px;
+	
+	}
+	
+	
+	p {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+ 
+
+   
