@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no" >
+ 
+  <title>meuApp</title>
+
+<!-- <link href="../styles/pagina-do-editor.css" rel="stylesheet"/> -->
+<style>
+ * {margin: 0; padding: 0}
+  
+    body {
+	 //background-color: #363636;
+	 background-image: url("../img/niko.jpg");
+     background-color: #cccccc;
+	}
+	#flexContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	}
+	
+	#titulo {
+	 display: flex;
+     justify-content: center;
+     align-items: center;
+	 //border: 1px solid red;
+	 width: 100%;
+	 height: 80px;
+	 background-color: black;
+	 color: #fff;
+	}
+
+	.daiku {
+	//border: 1px solid red;
+	font-size: 11px;
+	margin-top: 0px;
+	margin-left: 40px;
+	background-image: linear-gradient(to right, #000000, #0a1853);
+	width: 180px;
+	}
+	
+	.flex-acesso {
+	 display: flex;
+	 //justify-content: center;
+	 flex-direction: column;
+	 align-items: center;
+	 height: 1250px;
+	 width: 1000px;
+	 margin: 10px;
+	 //border: 1px solid violet;
+	 color: #fff;
+	 background-image: linear-gradient(to right, #000000, #0a1853);
+	}
+	
+	.introdução {
+	 display: flex;
+	 flex-wrap: wrap;
+	 width: 100%;
+	 //border: 1px solid red;
+	}
+	
+	.introdução img {
+	 width: 500px;
+	 height: 404px;
+	 margin: 10px;
+	}
+	
+	#introdução {
+	 margin: 10px;
+	 //border: 1px solid pink;
+	 width: 450px;
+	}
+	
+	.redator {
+	 display: flex;
+	 flex-wrap: wrap;
+	 border: 1px solid red;
+	 background-color: black;
+	 margin-top: 50px;
+	 color: lime;
+	 width: 350px;
+	 height: 150px;
+	}
+	
+	#redator {
+	 margin: 10px;
+	 border: 1px solid pink;
+	 width: 300px;
+	 height: 20px;
+	}
+	
+	.redator input {
+	 width: 80px;
+	 height: 30px;
+	 margin: -70px;
+	 margin-top: 40px;
+	}
+	
+	#rodape {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 120px;
+	background-color: #000;
+	margin-top: 80px;
+	}
+	
+	#titulo-artigo {
+	 margin-top: 30px;
+	 margin-bottom: 60px;
+	}
+	
+	p {
+	 margin: 20px;
+	 font-family: Arial, Helvetica, sans-serif;
+	 font-size: 20px;
+	}
+	
+	 @media screen and (max-width: 900px) {
+	 
+	 .flex-acesso {
+	 display: flex;
+	 //justify-content: center;
+	 flex-direction: column;
+	 align-items: center;
+	 height: 1250px;
+	 width: 100%;
+	 margin: 50px;
+	 //border: 1px solid violet;
+	 color: #fff;
+	 background-color: black;
+	}
+	 
+	 .introdução img {
+	 width: 100%;
+	 height: 404px;
+	 }
+	 }
+	
+</style>
+
+</head>
+<body id="flexContainer">
+
+
+ <div id="titulo">
+  <div class="daiku">
+     <h1>SHINIGAME</h1>
+     <h1>----DAIKU----</h1>
+   </div>
+	
+ </div>
+    <div class="flex-acesso">
+     <h1 id="titulo-artigo"></h1>
+	    <div class="introdução">
+		 <img src="../img/niko.jpg"  width="500" height="404" />
+		 <p id="introdução"></p>
+	    </div>
+			 <p id="artigo"></p>
+			 <p id="conclusao"></p>
+			  
+				<div class="redator">
+				<img src="../img/vendeta.jpg"  width="100" height="100" />
+				<strong>RANK: 55</strong>
+				<input type="button" value="gostei" witdh="500"/>
+				<p id="redator">Criado por MARIBONDOSMAN</p>
+				</div>
+    </div>
+		<div id="rodape" align="center">
+		 <img src="../img/bae so.PNG"  width="200" height="100" />
+	    </div>
+
+<script>
+document.getElementById('titulo-artigo').innerHTML = 'A história de John Doe';
+document.getElementById('introdução').innerHTML = 'Você já ouviu falar na historia fantastica de John Doe? Nesse artigo irei tratar com detalhes desventuras em serio desse tal John Doe, Lorem Ipsum is simply dummy text of the printing and , typesetting industry. Lorem Ipsum has been the industrys,tandard dummy text ever since the 1500s, when an unknown, printer took a galley of type and scrambled it to make a, type specimen book. It has, John Doe, Lorem Ipsum is simply dummy text of the printing and , typesetting industry. Lorem Ipsum has been the industrys,tandard dummy text ever since the 1500s, when an unknown, printer took a galley of type and scrambled it to make a, type specimen book. It has';
+		
+document.getElementById('artigo').innerHTML = 'john doe era foda, e era isso que fazia ele ser cada vez mais isso que ele sonhou ser. <wbr> Em 2077 ele virou um cyberpunk, mas a experiência deu errado pois a sua mecanica nao funcionava, entao ele encontrou a dimitrescu que lhe deu um braço robótico. isso fez com que a mib o encontrasse e descobriu se que ele era de kripton, onde os 4 elos de zê ramalho estao preso, john encontrou joao marruá aquele que robou o patinete da concurseira, John doe recuperou o patinete e se tornou amigo da concurseira.';
+document.getElementById('conclusao').innerHTML = 'John Doe conseguiu vencer a guerra ifinita de vallhala e se tornou o deus da guerra, quando foi infectado pelo T-VIRUS, e assim chegamos ao fim dessa incrivel historia!';
+//document.getElementById('in5').innerHTML = '#01';
+//document.getElementById('in6').innerHTML = 'MARIBONDOSMAN';
+
+const elements = document.getElementById('titulo');
+elements.addEventListener("click", home);
+
+function home() {
+	location.href="../index.html"
+}
+</script>
+ 
+
+</body>
+</html> 
+
+

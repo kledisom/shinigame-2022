@@ -6,7 +6,153 @@
  
   <title>meuApp</title>
 
-<link href="../styles/pagina-do-editor.css" rel="stylesheet"/>
+<!-- <link href="../styles/pagina-do-editor.css" rel="stylesheet"/> -->
+<style>
+ * {margin: 0; padding: 0}
+  
+    body {
+	background-color: #363636;
+	}
+	#flexContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 100%;
+
+
+	}
+	#titulo {
+	 display: flex;
+     justify-content: center;
+     align-items: center;
+	 //border: 1px solid red;
+	 width: 100%;
+	 height: 80px;
+	 background-color: black;
+	 color: #fff;
+	
+	}
+
+	.daiku {
+	//border: 1px solid red;
+	font-size: 11px;
+	margin-top: 0px;
+	margin-left: 40px;
+	background-image: linear-gradient(to right, #000000, #0a1853);
+	width: 180px;
+	}
+	
+	.flex-acesso {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 height: 1250px;
+	 margin: 50px;
+	 border: 1px solid violet;
+	}
+	
+	.flex-acesso form {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 padding: 10px;
+	 margin: 20px;
+	 border: 1px solid #000;	
+	 background-image: linear-gradient(to right, #000000, #0a1853);
+	 width: 800px;
+	 height: 1200px;
+	 color: #fff;
+	}
+	
+	.flex-acesso form label {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 margin: 5px;
+	 font-size: 20px; 
+	}
+	
+	.flex-acesso form #in1 { /*titulo*/
+	 height: 40px;  				
+	 width: 400px;
+	 font-size: 20px;
+	}
+	
+	.flex-acesso form #in2 { /*introdução*/
+	 height: 200px;
+	 width: 600px;
+	 font-size: 18px;
+	}
+	
+	.flex-acesso form #in3 { /*corpo do artigo*/
+	 height: 300px;
+	 width: 600px;
+	 font-size: 18px;
+	}
+	
+	.flex-acesso form #in4 { /*conclusão*/
+	 height: 200px;
+	 width: 600px;
+	 font-size: 18px;
+	}
+	
+	.flex-acesso form #in5 { /*numero do artigo*/
+	 height: 40px;
+	 width: 60px;
+	 font-size: 18px;
+	}
+	
+	.flex-acesso form #in6 { /*redator*/
+	 height: 40px;
+	 width: 200px;
+	 font-size: 18px;
+	}
+	
+	.flex-acesso form input { /*redator*/
+		background-color: lime;
+		text-align: justify;
+	}
+	
+	.final {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	}
+	
+	.flex-acesso button {
+	 margin: 15px;
+	 height: 30px;
+	 width: 80px;
+	 background-color: #800000;
+	}
+	
+	.flex-acesso button:hover {
+	 margin: 15px;
+	 height: 30px;
+	 width: 80px;
+	 background-color: #FF0000;
+	}
+	
+	#rodape {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 120px;
+	background-color: #000;
+	margin-top: 80px;
+	
+	}
+	
+	
+	p {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+</style>
+
 </head>
 <body id="flexContainer">
 
@@ -23,27 +169,27 @@
 		 <label>Editor</label>
 		  <div>
 			 <label>TITULO DO ARTIGO</label>
-			 <input type="text" id="in1" placeholder="Digite seu usuario" />
+			 <textarea id="in1" placeholder="Digite seu usuario"></textarea>
 		  </div>
 		  <div>
 			 <label>INTRODUÇÃO</label>
-			 <input type="text" id="in2" placeholder="Digite sua senha" />
+			 <textarea id="in2" placeholder="Digite seu usuario"></textarea>
 		  </div>
 	      <div>
 			 <label>CORPO DO ARTIGO</label>
-			 <input type="text" id="in3" placeholder="Digite sua senha" />
+			<textarea id="in3" placeholder="Digite seu usuario"></textarea>
 		  </div>
 	      <div>
 			 <label>CONCLUSÃO</label>
-			 <input type="text" id="in4" placeholder="Digite sua senha" />
+			 <textarea id="in4" placeholder="Digite seu usuario"></textarea>
 		  </div>
-	      <div>
+	      <div class="final">
 			 <label>NÚMERO DO ARTIGO</label>
-			 <input type="text" id="in5" placeholder="Digite sua senha" />
+			 <textarea id="in5" placeholder="Digite seu usuario"></textarea>
 			 
 			 	      
 			 <label>REDATOR</label>
-			 <input type="text" id="in6" placeholder="Digite sua senha" />
+			 <textarea id="in6" placeholder="Digite seu usuario"></textarea>
 		  
 		  </div>
 		  
@@ -57,6 +203,19 @@
 	    </div>
 
 <script>
+document.getElementById('in1').value = 'A história de John Doe';
+document.getElementById('in2').value = 'Você já ouviu falar na historia fantastica de John Doe? Nesse artigo irei tratar com detalhes desventuras em serio desse tal John Doe';
+document.getElementById('in3').value = 'john doe era foda, e era isso que fazia ele ser cada vez mais isso que ele sonhou ser.em 2077 ele virou um cyberpunk, mas a experiência deu errado pois a sua mecanica nao funcionava, entao ele encontrou a dimitrescu que lhe deu um braço robótico. isso fez com que a mib o encontrasse e descobriu se que ele era de kripton, onde os 4 elos de zê ramalho estao preso, john encontrou joao marruá aquele que robou o patinete da concurseira, John doe recuperou o patinete e se tornou amigo da concurseira.';
+document.getElementById('in4').value = 'John Doe conseguiu vencer a guerra ifinita de vallhala e se tornou o deus da guerra, quando foi infectado pelo T-VIRUS, e assim chegamos ao fim dessa incrivel historia!';
+document.getElementById('in5').value = '#01';
+document.getElementById('in6').value = 'MARIBONDOSMAN';
+
+const elements = document.getElementById('titulo');
+elements.addEventListener("click", home);
+
+function home() {
+	location.href="../index.html"
+}
 </script>
  
 

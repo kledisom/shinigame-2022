@@ -8,7 +8,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	height: 100%;
-	border: 1px solid lime;
+
 
 	}
 	#titulo {
@@ -36,7 +36,7 @@
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
-	 height: 750px;
+	 height: 1250px;
 	 margin: 50px;
 	 border: 1px solid violet;
 	}
@@ -50,8 +50,8 @@
 	 margin: 20px;
 	 border: 1px solid #000;	
 	 background-image: linear-gradient(to right, #000000, #0a1853);
-	 width: 500px;
-	 height: 600px;
+	 width: 800px;
+	 height: 1200px;
 	 color: #fff;
 	}
 	
@@ -64,34 +64,52 @@
 	 font-size: 20px; 
 	}
 	
-	.flex-acesso form #in1 {
-	 height: 40px;
+	.flex-acesso form #in1 { /*titulo*/
+	 height: 40px;  				
 	 width: 400px;
+	 font-size: 20px;
 	}
 	
-	.flex-acesso form #in2 {
+	.flex-acesso form #in2 { /*introdução*/
 	 height: 200px;
-	 width: 400px;
+	 width: 600px;
+	 font-size: 18px;
 	}
 	
-	.flex-acesso form #in3 {
+	.flex-acesso form #in3 { /*corpo do artigo*/
 	 height: 300px;
-	 width: 400px;
+	 width: 600px;
+	 font-size: 18px;
 	}
 	
-	.flex-acesso form #in4 {
+	.flex-acesso form #in4 { /*conclusão*/
 	 height: 200px;
-	 width: 400px;
+	 width: 600px;
+	 font-size: 18px;
 	}
 	
-	.flex-acesso form #in5 {
+	.flex-acesso form #in5 { /*numero do artigo*/
 	 height: 40px;
 	 width: 60px;
+	 font-size: 18px;
 	}
 	
-	.flex-acesso form #in6 {
+	.flex-acesso form #in6 { /*redator*/
 	 height: 40px;
 	 width: 200px;
+	 font-size: 18px;
+	}
+	
+	.flex-acesso form input { /*redator*/
+		background-color: lime;
+		text-align: justify;
+	}
+	
+	.final {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
 	}
 	
 	.flex-acesso button {

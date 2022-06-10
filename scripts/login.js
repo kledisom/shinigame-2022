@@ -60,3 +60,9 @@ const log = console.log;
  
  };
  
+const element = document.getElementById('titulo');
+element.addEventListener("click", home);
+
+function home() {
+	location.href="../index.html"
+}

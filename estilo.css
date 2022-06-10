@@ -152,6 +152,18 @@
 	 ul.separador li:last-child::after {
 	     display: none;
     }
+	
+	.separador a{
+	 text-decoration: none;
+	 color: #fff;
+	 font-size: 18px;
+	}
+	
+	.separador a:hover{
+	 text-decoration: none;
+	 color: #fff;
+	}
+	
      .ref {
 	 //border: 1px solid blue;
 	 height: 20px;
@@ -162,7 +174,7 @@
 	 margin-top: 30px;
 	 border-radius: 10px;
 	 }
-     a:hover {
+     #titulo a:hover {
 	 background-color: blue;
 	 }
 	 div.item:hover {
