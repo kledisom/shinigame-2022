@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, user-scalable=no" >
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  
   <title>meuApp</title>
 
@@ -20,7 +23,7 @@
 	   <div id="option">
 	     <a class="ref">INICIO</a>
 		 <a class="ref">SHOW</a>
-		 <a class="ref">EQUIPE</a>
+		 <a class="ref" href="./pages/acesso-do-redator.html">EQUIPE</a>
 		 <a class="ref">SOBRE</a>		  
 	   </div>
 	   
@@ -57,6 +60,12 @@
 			 <label for="slide3"></label>
 		     <img src="./img/exemplo3.jpg" />
 		 </li>
+
+		 <li id="artQuatro">
+		     <input type="radio" id="slide4" name="slide" checked />
+			 <label for="slide4"></label>
+		     <img src="./img/stranger-4.jpg" />
+		 </li>
 	 </ul>
 	 
 	 <div class="topicos">
@@ -92,9 +101,17 @@
      
 	 
 	  <ul class="separador">
-        <li><a href="./pages/artigos.html">Uma lenda entre os deuses
-		graças a sua pela cinza fantasma, clique aqui 
-		e saiba mais sobre a história de John Doe o fantasma de esparta.</a></li>
+        <li><a href="./pages/artigos.html"><strong class="destaque">John Doe</strong> 
+		 , uma lenda entre os deuses. Graças a sua pela cinza fantasma, clique aqui 
+		e saiba mais sobre a história do fantasma de esparta.</a></li>
+		
+		<li><a href="./pages/artigos-stranger.html"><strong class="destaque">Stranger Things 4</strong> está simplesmente espetacular
+		clique e saiba quais foram os detalhes que deixaram nossa turma de 
+	     orelha em pé</a></li>
+		
+		<li><a>Lorem Ipsum is simply dummy text of the printing and 
+	    typesetting industry. Lorem Ipsum has been the industry's
+	    standard dummy text ever since the 1500s,</a></li>
 		
 		<li><a>Lorem Ipsum is simply dummy text of the printing and 
 	    typesetting industry. Lorem Ipsum has been the industry's
@@ -102,23 +119,11 @@
 	    printer took a galley of type and scrambled it to make a
 	    type specimen book. It has</a></li>
 		
-		<li>Lorem Ipsum is simply dummy text of the printing and 
+		<li><a>Lorem Ipsum is simply dummy text of the printing and 
 	    typesetting industry. Lorem Ipsum has been the industry's
 	    standard dummy text ever since the 1500s, when an unknown
 	    printer took a galley of type and scrambled it to make a
-	    type specimen book. It has</li>
-		
-		<li>Lorem Ipsum is simply dummy text of the printing and 
-	    typesetting industry. Lorem Ipsum has been the industry's
-	    standard dummy text ever since the 1500s, when an unknown
-	    printer took a galley of type and scrambled it to make a
-	    type specimen book. It has</li>
-		
-		<li>Lorem Ipsum is simply dummy text of the printing and 
-	    typesetting industry. Lorem Ipsum has been the industry's
-	    standard dummy text ever since the 1500s, when an unknown
-	    printer took a galley of type and scrambled it to make a
-	    type specimen book. It has</li>
+	    type specimen book. It has</a></li>
  
 </ul>
 
@@ -144,10 +149,14 @@
 	</div>
 
 <script>
+const elements = document.getElementById('artQuatro');
+ elements.addEventListener("click", home);
+
+function home() {
+	location.href="../pages/artigos-stranger.html"
+}
 </script>
  
 
 </body>
 </html> 
-
-

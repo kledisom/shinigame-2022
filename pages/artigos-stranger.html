@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no" >
+ 
+  <title>meuApp</title>
+
+<!-- <link href="../styles/pagina-do-editor.css" rel="stylesheet"/> -->
+<style>
+ * {margin: 0; padding: 0}
+  
+    body {
+	 //background-color: #363636;
+	 background-image: url("../img/stranger-fundo.jpg");
+     background-color: #cccccc;
+	}
+	#flexContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	}
+	
+	#titulo {
+	 display: flex;
+     justify-content: center;
+     align-items: center;
+	 //border: 1px solid red;
+	 width: 100%;
+	 height: 80px;
+	 background-color: black;
+	 color: #fff;
+	}
+
+	.daiku {
+	//border: 1px solid red;
+	font-size: 11px;
+	margin-top: 0px;
+	margin-left: 40px;
+	background-image: linear-gradient(to right, #000000, #0a1853);
+	width: 180px;
+	}
+	
+	.flex-acesso {
+	 display: flex;
+	 //justify-content: center;
+	 flex-direction: column;
+	 align-items: center;
+	 height: 100%;
+	 width: 1000px;
+	 margin: 10px;
+	 //border: 1px solid violet;
+	 color: #fff;
+	 background-image: linear-gradient(to right, #000000, #0a1853);
+	}
+	
+	.introdução {
+	 display: flex;
+	 flex-wrap: wrap;
+	 width: 100%;
+	}
+	
+	.introdução img {
+	 width: 500px;
+	 height: 404px;
+	 margin: 10px;
+	}
+
+	#gifUm {
+	 width: 500px;
+	 height: 191px;
+	 margin-top: -200px;
+	}
+
+	#gifDois {
+	 width: 500px;
+	 height: 191px;
+	 
+	}
+	
+	#introdução {
+	 margin: 10px;
+	 width: 450px;
+	}
+	
+	.redator {
+	 display: flex;
+	 flex-wrap: wrap;
+	 border: 1px solid red;
+	 background-color: black;
+	 margin-top: 50px;
+	 color: lime;
+	 width: 350px;
+	 height: 150px;
+	}
+	
+	#redator {
+	 margin: 10px;
+	 //border: 1px solid pink;
+	 width: 300px;
+	 height: 20px;
+	}
+	
+	.redator input {
+	 width: 80px;
+	 height: 30px;
+	 margin: -70px;
+	 margin-top: 40px;
+	}
+	
+	#rodape {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 120px;
+	background-color: #000;
+	margin-top: 80px;
+	}
+	
+	#titulo-artigo {
+	 margin-top: 30px;
+	 margin-bottom: 60px;
+	}
+	
+	p {
+	 margin: 20px;
+	 font-family: Arial, Helvetica, sans-serif;
+	 font-size: 20px;
+	 line-height: 40px;
+	}
+	
+	 @media screen and (max-width: 900px) {
+	 
+	 .flex-acesso {
+	 display: flex;
+	 //justify-content: center;
+	 flex-direction: column;
+	 align-items: center;
+	 text-align: center;
+	 height: 100%;
+	 width: 100%;
+	 margin: 50px;
+	 //border: 1px solid violet;
+	 color: #fff;
+	 background-color: black;
+	}
+	 
+	 .introdução img {
+	 width: 100%;
+	 height: 404px;
+	 }
+
+	 #gifUm {
+	 width: 97%;
+	 height: 191px;
+	 margin-top: -200px;
+	}
+
+	#gifDois {
+	 width: 100%;
+	 height: 191px;
+	 
+	}
+
+	 }
+	
+</style>
+
+</head>
+<body id="flexContainer">
+
+
+ <div id="titulo">
+  <div class="daiku">
+     <h1>SHINIGAME</h1>
+     <h1>----DAIKU----</h1>
+   </div>
+	
+ </div>
+    <div class="flex-acesso">
+     <h1 id="titulo-artigo"></h1>
+	    <div class="introdução">
+		 <img src="../img/stranger.webp"  width="500" height="404" />
+		 <p id="introdução"></p>	 
+		 <img id="gifUm" src="../img/gifs/stranger-things4-teaser-trailer.gif"  width="400" height="191" />
+
+	    </div>
+			 <p id="artigo"></p>
+			 <img id="gifDois" src="../img/gifs/st-4.gif"  width="400" height="200" />
+			 <p id="conclusao"></p>
+			  
+				<div class="redator">
+				<img src="../img/vendeta.jpg"  width="100" height="100" />
+				<strong>RANK: 10</strong>
+				<input type="button" value="gostei" witdh="500"/>
+				<p id="redator">Criado por SR. KLEDISOM</p>
+				</div>
+    </div>
+		<div id="rodape" align="center">
+		 <img src="../img/bae so.PNG"  width="200" height="100" />
+	    </div>
+
+<script>
+
+document.getElementById('titulo-artigo').innerHTML = 'STRANGER THINGS T-4 MELHOR DE TODAS ';
+document.getElementById('introdução').innerHTML = 'Hoje eu terminei de assistir a quarta temporada de stranger things, e já vou logo adiantando para todos vocês que essa temporada está simplesmente demais. '+
+'A serie prometia desde o seu inicio, com seu estilo diferenciado, e uma tematica que não é tão explorada atualmente STRANGER se destaca anos luz a frente de muitas series da atualidade.'+
+'Os cenarios estão impecaveis, a trilha sonora está linda, o figurino dos personagens está a altura, o carisma de todos os personagens é muito surreal'+
+'essa turminha consegue realmente chamar atenção, e eu não posso deixar de dar um destaque especial para o DUSTIN, afinal esse moleque monta as melhores teórias, vamos explorar um pouco mais? continue no artigo e APOIE NOSSO TRABALHO! ';
+		
+document.getElementById('artigo').innerHTML = 'Pra resumir toda essa introdução eu só preciso usar uma palavra. F*** (INCRIVEL) GALERA '+
+'a temporada começa meio misteriosa normal né? então você fica meio perdido por que, tu vai querer associar o inicio desta temporada com o final da temporada passada '+
+'mas não é bem por ai. Claro que tudo nessa serie gira em torno do MUNDO INVERTIDO, mas se vocÊ espera encontrar DEMONGORGON de cara, tenha calma '+
+'o desfeche da história vai ser um pouco diferente, desta vez a série vai explorar um pouco mais o mundo invertido, ela vai mostrar detalhes e dar explicações '+
+'sobre os portais, como eles foram abertos, cita as intenções do tal DEVORADOR DE MENTES e etc. Se tratando dos personagens agora podemos ver '+
+'uma turminha mais madura, todos estão no ensino médio meio que passando por aquela fase chata de BULLYNG, triste realidade! Mas não está tão ruin '+
+'mesmo assim eles encontram uma turma onde se encaixar, eles se separam um pouco pois o WILL mudou de cidade, o LUCAS agora é jogador de basket então se juntou com os "POPULARES DO COLÉGIO" '+
+'a MAX está um pouco distante de todos depois da morte de BILLY seu irmão mais velho, e por fim restaram o DUSTIN e o MIKE que agora estão com os HELLFIRA, que é um club de jogadores de D&D (DUNGEONS AND DRAGONS).'+
+'';
+
+document.getElementById('conclusao').innerHTML = 'Se você está se perguntando se vale a pena assitir, mano vale muito a temporada tem 7 ep. aproximadamente unas 8 horas de Série '+
+'Oh segue um conselho para o que está fazendo agora e corre lá para assistir e eu aposto que no final tu vai querer voltar tudo e maratonar outra vez. '+
+'e cuidado para não viciar na trilha sonora como eu já citei antes ela está impecável!'+
+'Um grande ABRAÇO a todos !!, e lembrem-se "TODO COMEÇO É DIFICIL, MAS SE NÃO COMEÇAR COMO IREMOS ALCANÇAR NOSSAS METAS!"';
+//document.getElementById('in5').innerHTML = '#01';
+//document.getElementById('in6').innerHTML = 'MARIBONDOSMAN';
+
+const elements = document.getElementById('titulo');
+elements.addEventListener("click", home);
+
+function home() {
+	location.href="../index.html"
+}
+</script>
+ 
+
+</body>
+</html> 
+
+
